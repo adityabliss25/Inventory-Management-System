@@ -4,13 +4,13 @@
 The objective of this project is to develop an Advanced Inventory Management System using the Java Collections Framework. The system is designed to handle product data efficiently by selecting the optimal data structure for each specific business requirement, such as uniqueness, sorting, and historical tracking.
 
 ### Key Objectives
-• Unique Identification: Ensuring no two products share the same SKU.
+• **Unique Identification**: Ensuring no two products share the same SKU.
 
-• Automatic Sorting: Maintaining a catalog sorted by product code.
+• **Automatic Sorting**: Maintaining a catalog sorted by product code.
 
-• Undo Functionality: Allowing users to revert the last inventory change.
+• **Undo Functionality**: Allowing users to revert the last inventory change.
 
-• Process Management: Handling pending update requests in a First-In-First-Out (FIFO) manner.
+• **Process Management**: Handling pending update requests in a First-In-First-Out (FIFO) manner.
 
 ## 2. Setup and Installation Instructions**
 
@@ -44,19 +44,19 @@ The system is organized into three primary components to ensure modularity and c
 
 The following advanced Java Collections were utilized to meet the project's technical specifications:
 
-• HashSet: Implemented to manage a registry of unique SKUs. This provides $O(1)$ time complexity for checking if a product exists before adding it.
+• **HashSet**: Implemented to manage a registry of unique SKUs. This provides $O(1)$ time complexity for checking if a product exists before adding it.
 
-• TreeSet: Used for the product catalog to ensure all items are automatically sorted by their SKU.
+• **TreeSet**: Used for the product catalog to ensure all items are automatically sorted by their SKU.
 
-• LinkedList: Utilized to maintain a persistent "Transaction History" log of every action taken in the system.
+• **LinkedList**: Utilized to maintain a persistent "Transaction History" log of every action taken in the system.
 
-• Stack: Implemented for the Undo feature. Each new addition is pushed onto the stack; the pop() method is used to revert the most recent change.
+• **Stack**: Implemented for the Undo feature. Each new addition is pushed onto the stack; the pop() method is used to revert the most recent change.
 
-• Queue: Used to manage a "Pending Updates" list. This ensures that restock requests are processed in the exact order they were received (FIFO).
+• **Queue**: Used to manage a "Pending Updates" list. This ensures that restock requests are processed in the exact order they were received (FIFO).
 
-• Comparable Interface: Implemented in the Product class to provide natural sorting logic based on the SKU.
+• **Comparable Interface**: Implemented in the Product class to provide natural sorting logic based on the SKU.
 
-• Custom Comparators: Created specific sorting logic to allow the inventory to be viewed by Price or Quantity independently of the SKU.
+• **Custom Comparators**: Created specific sorting logic to allow the inventory to be viewed by Price or Quantity independently of the SKU.
 
 
 ## 5. System Workflow & Data Optimization
