@@ -73,11 +73,8 @@ The following advanced Java Collections were utilized to meet the project's tech
 ## 6. Screenshots & Diagrams
 UML Class Diagram
 
-This diagram shows the relationship between the Book, Member, and Library classes.
-
-
-https://github.com/adityabliss25/Library-Management-System/blob/master/docs/Images/Use%20Case%20Diagram.png
-
+https://github.com/adityabliss25/Inventory-Management-System/blob/main/docs/Images/UML%20Class%20diagram.png
 
 Console Output
-https://github.com/adityabliss25/Library-Management-System/blob/master/docs/Images/Console%20Output.png
+
+https://github.com/adityabliss25/Inventory-Management-System/blob/main/docs/Images/Output.png
